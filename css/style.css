@@ -1,0 +1,377 @@
+/****************************************************************************
+                        Common
+ ****************************************************************************/
+html,body{
+	font-family: 'Roboto', sans-serif;
+}
+h1, .h31, .h32{
+    font-family: 'Cantata One', serif; 
+    font-weight:bolder;
+}
+h1 span{
+    color:#337ab7;
+    margin-left:15px;
+    font-weight:100;
+}
+hr{
+	height:2px;
+	width:50px;
+	background-color:#337ab7;
+}
+.h31{
+    color:#337ab7;
+}
+.h32{
+    margin-top:-10px;
+}
+/* This code gives you outline of the layouts with dark background*/
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+@media only screen and (max-width:540px)
+{
+    h1{
+		font-size:16pt;
+	}
+	h3,h4{
+		font-size:14pt;
+	}
+	p{
+		font-size:12pt;
+	}
+}
+
+
+/****************************************************************************
+                        Main Header
+ ****************************************************************************/
+.landing{
+	height:667px;
+	background-image:url("../img/5.jpg");
+	background-size:cover;
+	display:flex;
+	justify-content:space-around;
+	align-items:flex-end;
+}
+.landing .container-fluid  .title{
+	margin: auto auto;
+    color: #fff;
+}
+.landing i{
+	content:'/f103';
+	font-family:fontAwesome,sans-serif;  
+	font-size:20pt;
+}
+.landing .scrollicon{
+    margin-top: 150px;
+}
+.landing .p1{
+    letter-spacing:5px;font-size:11pt;
+}
+.landing .p2{
+    font-family: 'Cantata One', serif;
+    font-weight:bolder; 
+}
+.landing .p3{
+    font-size:11pt;
+}
+@media only screen and (max-width:720px)
+{
+    .landing i{
+		margin-top:20px;
+	}
+}
+@media only screen and (max-width:540px)
+{
+      .landing .scrollicon{
+    margin-top: 50px;
+    }
+}
+/****************************************************************************
+                        Section-2
+ ****************************************************************************/
+.sec2{
+	margin-top:120px;	
+}
+.sec2 p{
+    margin-top:20px;
+}
+.sec2 .sec2_content{
+	padding-left:200px;
+}
+.sec2  img{
+	width:550px;
+	height:auto;
+}
+.sec2 .seccol{
+    padding-right:0px;
+}
+/****************************************************************************
+                       this is the line before the number
+ ****************************************************************************/
+.sec2_content:before {
+    content: '';
+    height: 2px;
+    width: 200px;
+    background-color: #337ab7;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+@media only screen and (max-width:990px)
+{
+    .sec2 .sec2_content{
+	padding-left:100px;
+	}
+    .sec2_content::before{
+            height:0px;
+    }
+}
+@media only screen and (max-width:720px)
+{
+     .sec2 .sec2_content{
+	padding:20px;
+	}
+}
+/****************************************************************************
+                        Section-3
+ ****************************************************************************/
+.sec3{
+	margin-top:150px;	
+}
+.sec3 .firstcol{
+    padding-left:0px;
+}
+.sec3 .sec3_content{
+	padding-right:200px;
+	margin-left:50px;
+}
+.sec3  img{
+	width:550px;
+	height:auto;
+}
+.sec3_content h1{
+    text-align:right;
+}
+.sec3_content h1 span{
+    color:#337ab7;
+    margin-right:15px;
+    font-weight:100;
+}
+.sec3_content p{
+    margin-top:20px;
+}
+.sec3_content::after{
+	content:'';
+	height:2px;
+	width:200px;
+	background-color:#337ab7;
+	position:absolute;
+	top:25px;
+	right:0;	
+}
+@media only screen and (max-width:990px)
+{
+    .sec3 .sec3_content{
+	padding-right:100px;
+	}
+.sec3_content::after{
+		height:0px;
+	}
+}
+@media only screen and (max-width:720px)
+{
+    .sec3 .sec3_content{
+	padding:20px;
+	margin:20px 0 0 0px;
+	}  
+     .sec-cont-p{
+        font-size:11pt;
+    }
+    .secimg img{
+        width:300px;
+		height:auto;
+    }
+}
+@media only screen and (max-width:360px)
+{
+    .sec-cont{
+        padding:0;
+    }
+}
+/****************************************************************************
+                       Section-4 
+ ****************************************************************************/
+.sec4{
+	margin-top:200px;	
+}
+.sec4 .h32{
+    text-decoration:line-through;
+}
+.imgsec .row{
+			justify-content:center;
+		}
+.imgsec img{
+		width:auto;
+		height:300px;
+		margin:5px;
+	}
+.img-text{
+	position:relative;	
+}
+.img{
+	max-width:100%;
+}
+.overlay {
+  position: absolute;
+  top: 5;
+  bottom: 0;
+  left: 5;
+  right: 5;
+  height: 300px;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #337ab7;
+}
+.img-text:hover .overlay {
+  opacity: 0.6;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media only screen and (max-width:720px)
+{
+    .sec4>hr{
+	height:1px;
+	width:30px;
+	}
+} 
+@media only screen and (max-width:560px)
+{
+    .overlay{
+        right: -5;
+    }
+}
+/****************************************************************************
+                        Section-5
+ ****************************************************************************/
+.sec5
+{
+	margin-top:200px;
+	justify-content:center;
+	max-width:100%;
+}
+.sec5 h4{
+    color:#337ab7;
+    font-family: 'Cantata One', serif;
+    font-weight:bolder;
+}
+.sec5 .row{
+    max-width:100%;
+}
+.sec5 .col{
+	margin:0px 130px;
+}
+@media only screen and (max-width:720px)
+{
+    .sec5 .col{
+	margin:0px 30px;
+    }
+}
+/****************************************************************************
+                        Section-6
+ ****************************************************************************/
+.last-sec{
+	margin:200px 0 0 160px;
+	max-width:100%;
+}
+.sec6 h1{
+    color:#337ab7;
+}
+.sec6 .row{
+	margin:0px 130px;
+}
+.sec6 i{
+	font-size:20pt;
+	margin-left:10px;
+	color:grey;
+}
+.sec6 i:hover{
+	color:#337ab7;
+	cursor:pointer;
+}
+.sec6 svg{
+	width:200px;
+	height:auto;
+}
+.sec6 svg:hover{
+	cursor:pointer;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 9px 0 rgba(0,0,0,0.1);
+}
+.sec6 .firstcol p{
+    margin-top:30px;
+}
+.sec6 h4{
+    color:#337ab7;
+    font-family: 'Cantata One', serif;
+}
+.sec6 .seccol p{
+    margin-top:30px;
+    color:grey;
+}
+@media only screen and (max-width:960px)
+{
+	.last-sec{
+		margin:200px 0 0 70px;
+    }
+.sec6 .row{
+	margin:0px 50px;
+	}
+}
+@media only screen and (max-width:720px)
+{
+    .sec{
+        margin-top:50px;
+    }  
+}
+/****************************************************************************
+                        Footer
+ ****************************************************************************/
+.footer
+{
+    margin-top: 100px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	color:#fff;
+	background-image:url("../img/11.jpg");
+	background-size:cover;
+	height:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
